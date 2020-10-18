@@ -1,6 +1,7 @@
 Đề bài cho một ma trận n * n với một số các vị trí đã biết. Được hỏi tối đa n*n lần đoạn đường từ vị trí thứ nhất đến vị trí thứ hai có tạo thành một xâu đối xứng không.
 Không được hỏi đường đi giữa hai ô cạnh nhau, và buộc phải đi sang phải và xuống dưới.
 
+Nếu đoạn đường là xâu đối xứng, câu trả lời sẽ là "Yes ....", không phải thì là "... bad ...".
 Dễ thấy nếu đường đi giữa hai điểm có độ dài là 3 thì xâu có đối xứng hay không chỉ phụ thuộc vào điểm đầu và điểm cuối, nên nếu biết 1 đỉnh (x, y) thì ta sẽ suy ra được tối đa 6 đỉnh (nếu có):
     (x+2, y), (x, y+2), (x+1, y+1), (x-1, y-1), (x-2, y), (x, y-2)
 Bài toán quay về tìm kiếm rộng, ban đầu từ tập đỉnh đã biết, ta sẽ đưa vào hàng đợi. Mỗi một lần ta sẽ kiểm tra 6 đỉnh kề với đỉnh ở đầu hàng đợi, nếu chưa biết thì ta sẽ thực hiện hỏi và đưa vào trong

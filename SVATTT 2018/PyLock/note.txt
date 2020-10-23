@@ -1,0 +1,2 @@
+Dùng tool -> chuyển file exe thành pyc. File unlock.pyc bị sai định dạng, thêm 6 byte đầu của pyc rồi dùng uncpmpyle6 để decomplie file pyc.
+File python thu được sẽ thực hiện giải mã đoạn string 19 lần, khi đó ta sẽ thu được một file chứa code không bị mã hóa. Dịch ngược file -> flag : SVATTT2018{THISISTOOEASYEASYEASY}

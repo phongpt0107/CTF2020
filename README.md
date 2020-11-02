@@ -1,1 +1,2 @@
 # CTF2020
+Just CTF <3

@@ -20,6 +20,7 @@ char* strcat_l(char* x, const char* y){
 	strcat(ret, y);
 	return ret;
 }
+/*
 bool check(tmp* x){
 	char* path = x->path;
 	int v0_ = 3, v1_ = 0;
@@ -51,6 +52,7 @@ bool check(tmp* x){
 	}
 	return true;
 }
+*/
 char c1[] = {0,  1,   0,   1,   0,   1,   1,   1,   0,   0, 
     1,   1,   1,   0,   1,   1,   0,   1,   1,   0, 
     0,   1,   0,   1,   0,   1,   1,   0,   0,   1, 
@@ -95,10 +97,11 @@ int main(){
 			if(v0_ < 0 || v1_ < 0 || v0_ >= 8 || v1_ >= 8){
 				cur -= 1;
 				continue;
-			}if(!check(x)){
-				cur -= 1;
-				continue;
 			}
+//			if(!check(x)){
+//				cur -= 1;
+//				continue;
+//			}
 			if(c1[id] == 1) qe.push(make(v0_, v1_ - 1, strcat_l(x->path, "U")));
 			if(c1[id + 1] == 1) qe.push(make(v0_, v1_ + 1, strcat_l(x->path, "D")));
 			if(c1[id + 2] == 1) qe.push(make(v0_ - 1, v1_, strcat_l(x->path, "L")));
